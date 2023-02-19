@@ -14,13 +14,16 @@
       defer
     ></script>
 
-    <!--<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>-->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
     <script type="text/javascript" src="./main.js" defer></script>
   </head>
   <body>
-    <ul>
-      <li></li>
-    </ul>
+    <div id="app">
+      <button @click="addmail()">ADDMAIL</button>
+      <ul v-for="mail in mail">
+        <li>{{mail}}</li>
+      </ul>
+    </div>
   </body>
 </html>
